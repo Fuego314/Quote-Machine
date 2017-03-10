@@ -1,0 +1,47 @@
+.quote-btns
+  display: flex
+  justify-content: center
+  button
+    padding: 0 .6em
+    margin-right: .625em
+    background: transparent
+
+#quote-btn,
+.tweet-btn
+  position: relative
+  border: .125em solid #ebebeb
+  border-radius: 1.563em
+  &:hover
+    background: rgba(17, 86, 139, 0.84)
+  &:active
+    top: .125em
+
+.tweet-btn
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  width: 2.063em
+  height: 2.063em
+  text-decoration: none
+  cursor: pointer
+  @media(min-width: 420px)
+    width: 2.188em
+    height: 2.188em
+
+.tweet-svg
+  width: 1.2em
+  margin-left: 2px
+  margin-top: 1px
+
+@media(min-width: 1024px)
+	.tweet-btn
+	  width: 2.519em
+	  height: 2.519em
+    .tweet-svg
+      width: 1.5em
+      margin-left: 1px
+      margin-top: 2px
+	.quote-btns
+    justify-content: flex-start
+	#quote-btn
+    padding: .1em  .8em

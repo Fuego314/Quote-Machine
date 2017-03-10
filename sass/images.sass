@@ -1,0 +1,25 @@
+// Mobile image
+.ron-sm
+  display: block
+  width: 9em
+  margin: 0 auto
+  @media(min-width: 420px)
+    width: 10em
+
+// Larger screen image
+.ron-lg-holder
+  display: none
+
+.ron-lg
+  display: none
+
+@media(min-width: 1024px)
+	.ron-sm
+    display: none
+	.ron-lg-holder
+		display: flex
+		align-items: center
+	.ron-lg
+    display: block
+    width: 13.563em
+    height: 29.938em
